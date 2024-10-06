@@ -6,10 +6,12 @@ let sumArr = [];
 const reducer = (state, action) => {
     console.log(state, action);
     if(action.type === "INCREMENT"){
-        console.log(sumArr);
-        let incOne = state + 1;
-        sumArr.push(incOne);
-        return incOne;
+        // console.log(sumArr);
+        // let incOne = state + 1;
+        // sumArr.push(incOne);
+        // return incOne;
+        return  state + 1;
+
     }
     if(action.type === "DECREMENT"){
         return state - 1;
